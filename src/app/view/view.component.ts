@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {JournalService} from "../journal-service/journal.service";
 
 @Component({
   selector: 'app-view',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./view.component.css']
 })
 export class ViewComponent {
+  constructor(journalService: JournalService) {
+  }
 
 }

@@ -1,1 +1,49 @@
-<p>create works!</p>
+<nav class="navbar navbar-expand-lg">
+  <div class="container">
+    <div class="row">
+      <ul class="navbar navbar-nav">
+        <div class="col">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="">Home</a>
+          </li>
+        </div>
+        <div class="col">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/create">Create</a>
+          </li>
+        </div>
+        <div class="col">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/view">View</a>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main class="container">
+  <div class="row">
+    <div class="col">
+      <form id="journal">
+        <label class="form-label" for="journalName">Journal Name</label>
+        <input class="form-control" type="text" id="journalName" required><br>
+        <label class="form-label" for="gameName">Video Game</label>
+        <input class="form-control" type="text" id="gameName" required><br>
+        <label class="form-label">Entry</label><br>
+        <textarea class="form-control" type="text" id="entry" cols="40" rows="20" required></textarea><br>
+        <button class="btn btn-primary" type="submit" id="create">Submit</button>
+        <button class="btn btn-secondary" type="reset">Clear</button>
+      </form>
+    </div>
+    <div class="col-6 overflow-auto" id="journalOutput">
+      <div class="card">
+        <div class="card-body">
+          <div class="card-title"></div>
+          <div class="card-subtitle"></div>
+          <div class="card-text"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
